@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className='bg-[#47867C] p-4 flex justify-between items-center'>
       <div>
-        <img onClick={() => navigate('/home')} src={logo} className='w-8/12 cursor-pointer' />
+        <img onClick={() => navigate('/')} src={logo} className='w-8/12 cursor-pointer' />
       </div>
       <div className='flex text-white items-center gap-4'>
         <h3>REGISTRA1ONT</h3>
