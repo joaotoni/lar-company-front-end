@@ -1,0 +1,20 @@
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 255px 1fr;
+  grid-template-rows: calc(100vh - 70px);
+
+  @media (max-width: 640px) {
+    grid-template-columns: 0px 600px;
+    width: 0px;
+  }
+
+  @media (max-width: 360px) {
+    grid-template-columns: 0px 360px;
+    width: 0px;
+  }
+
+  .dashboard-grid__top-menu {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
