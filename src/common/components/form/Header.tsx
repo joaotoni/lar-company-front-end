@@ -16,7 +16,7 @@ export default function Header() {
           inline
         >
           <Dropdown.Item className={`bg-neutral-300 hover:bg-red-500 text-black hover:text-gray dark:text-black mb-1 ${isActive('/clientes') ? 'bg-red text-white dark:text-white' : ''}`}
-            onClick={() => navigate('/clientes')}>
+            onClick={() => navigate('/cadastro-de-pessoa')}>
             Cadastrar Pessoa
           </Dropdown.Item>
           <Dropdown.Item className={`bg-neutral-300 hover:bg-red-500 text-black hover:text-gray dark:text-black mb-1 ${isActive('/clientes') ? 'bg-red text-white dark:text-white' : ''}`}

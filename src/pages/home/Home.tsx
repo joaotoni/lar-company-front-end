@@ -9,7 +9,7 @@ export default function Home() {
         <CardBox
           title="Cadastrar uma nova pessoa"
           buttonText="Cadastre Aqui"
-          navigateTo="/create-person"
+          navigateTo="/cadastro-de-pessoa"
         />
         <CardBox
           title="Ver lista de pessoas cadastradas"
