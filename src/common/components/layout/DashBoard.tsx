@@ -1,5 +1,4 @@
 import { PropsWithChildren } from "react"
-import "./Dashboard.scss"
 import Header from "../form/Header"
 
 function Dashboard(props: PropsWithChildren) {
@@ -8,9 +7,7 @@ function Dashboard(props: PropsWithChildren) {
     <div className="w-full">
       <div>
         <Header />
-        <div className="dashboard-grid">
-          <div className="dashboard-grid__side-menu">
-          </div>
+        <div className="flex items-center justify-around">
           <section className="bg-white text-black">
             {props.children}
           </section>
