@@ -9,7 +9,7 @@ function Dashboard(props: PropsWithChildren) {
     <div className="w-full">
       <div>
         <Header />
-        <div className="flex items-center justify-around">
+        <div className="flex items-center justify-center">
           <ToastContainer
             position="top-right"
             autoClose={5000}  

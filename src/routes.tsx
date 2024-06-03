@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/home/Home'
 import CreatePerson from './pages/create-person/CreatePerson'
+import CellPhoneRegister from './pages/cellphone-register/CellPhoneRegister'
 
 const router = createBrowserRouter([
   {
@@ -10,6 +11,10 @@ const router = createBrowserRouter([
   {
     path: "/cadastro-de-pessoa",
     element: <CreatePerson />,
+  },
+  {
+    path: "/cadastro-de-telefone",
+    element: <CellPhoneRegister />,
   },
 ])
 
