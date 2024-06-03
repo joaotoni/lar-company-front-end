@@ -19,7 +19,7 @@ export default function Home() {
         <CardBox
           title="Cadastrar um novo telefone"
           buttonText="Cadastre Aqui"
-          navigateTo="/create-phone"
+          navigateTo="/cadastro-de-telefone"
         />
       </section>
     </Dashboard>

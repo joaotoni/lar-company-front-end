@@ -4,15 +4,17 @@ import ComboBoxForm from "../../common/components/form/ComboBoxForm";
 import InputForm from "../../common/components/form/InputForm";
 import Dashboard from "../../common/components/layout/DashBoard";
 import { ICreatePerson } from './CreatePerson.type';
-import { createPerson } from '../../services/CreatePerson.api';
+import { createPerson } from '../../services/Person.api';
 import { toast } from 'react-toastify';
 
 const emptyPerson = (): ICreatePerson => ({
   id: '',
+  _id: '',
   name: '',
   cpf: '',
   birthDate: '',
-  active: ''
+  active: '',
+  phones: []
 });
 
 export default function CreatePerson() {
@@ -69,6 +71,7 @@ export default function CreatePerson() {
                 value={formData.birthDate}
                 onChange={handleChange}
                 required={true}
+                placeholder={''}
               />
               <ComboBoxForm
                 label="Está ativo?"

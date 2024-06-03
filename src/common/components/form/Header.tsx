@@ -24,8 +24,8 @@ export default function Header() {
             Listar Pessoas Cadastradas
           </Dropdown.Item>
           <Dropdown.Item className={`bg-neutral-300 hover:bg-red-500 text-black hover:text-gray dark:text-black mb-1 ${isActive('/clientes') ? 'bg-red text-white dark:text-white' : ''}`}
-            onClick={() => navigate('/clientes')}>
-            Cdaastrar telefone
+            onClick={() => navigate('/cadastro-de-telefone')}>
+            Cadastrar telefone
           </Dropdown.Item>
         </Dropdown>
       </div>
@@ -33,7 +33,7 @@ export default function Header() {
         <h2 className='font-bold text-white text-[22px]'> REGISTRAT1ONT</h2>
       </div>
       <div className='flex text-white items-center gap-4'>
-        <img onClick={() => navigate('/home')} src="/imgs/logo.png" className='w-[80px] cursor-pointer' />
+        <img onClick={() => navigate('/')} src="/imgs/logo.png" className='w-[80px] cursor-pointer' />
       </div>
     </header>
   )

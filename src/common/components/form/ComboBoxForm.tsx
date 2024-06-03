@@ -8,7 +8,7 @@ interface ComboBoxProps {
     errorMessage?: string;
     className?: string;
     value?: string | number;
-    onChange?: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+    onChange?: ((event: React.ChangeEvent<HTMLSelectElement>) => void) | undefined
   }
   
   export default function ComboBoxForm(props: ComboBoxProps) {
