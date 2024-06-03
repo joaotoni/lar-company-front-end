@@ -13,7 +13,6 @@ export function PersonsFieldForm({ onChange }: PersonsFieldFormProps) {
   useEffect(() => {
     const loadOptions = async () => {
       const result = await getPersons();
-      console.log(result);
       if (!result.ok) {
         setLoading(false);
         return;

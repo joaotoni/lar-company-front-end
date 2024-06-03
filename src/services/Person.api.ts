@@ -29,7 +29,6 @@ export async function createPerson(createPersonData: any): Promise<ApiResponseTy
 }
 
 export async function updatePerson(createPersonData: any): Promise<ApiResponseType<ICreatePerson>> {
-  console.log(createPersonData);
   const url = `${API_URL}persons/${createPersonData._id}`;
   const options = {
     method: "PUT",
