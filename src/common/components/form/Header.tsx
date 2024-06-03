@@ -19,13 +19,13 @@ export default function Header() {
             onClick={() => navigate('/cadastro-de-pessoa')}>
             Cadastrar Pessoa
           </Dropdown.Item>
-          <Dropdown.Item className={`bg-neutral-300 hover:bg-green-400 text-black hover:text-gray mb-1 ${isActive('/lista-de-pessoas') ? 'bg-green-400 text-black' : ''}`}
-            onClick={() => navigate('/lista-de-pessoas')}>
-            Listar Pessoas Cadastradas
-          </Dropdown.Item>
           <Dropdown.Item className={`bg-neutral-300 hover:bg-green-400 text-black hover:text-gray mb-1 ${isActive('/cadastro-de-telefone') ? 'bg-green-400 text-black' : ''}`}
             onClick={() => navigate('/cadastro-de-telefone')}>
             Cadastrar telefone
+          </Dropdown.Item>
+          <Dropdown.Item className={`bg-neutral-300 hover:bg-green-400 text-black hover:text-gray mb-1 ${isActive('/lista-de-pessoas') ? 'bg-green-400 text-black' : ''}`}
+            onClick={() => navigate('/lista-de-pessoas')}>
+            Listar Pessoas Cadastradas
           </Dropdown.Item>
         </Dropdown>
       </div>

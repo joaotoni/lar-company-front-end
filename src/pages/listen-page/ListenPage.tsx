@@ -3,15 +3,10 @@ import InputForm from "../../common/components/form/InputForm";
 import Dashboard from "../../common/components/layout/DashBoard";
 import { getPersons } from "../../services/Person.api";
 import { ICreatePerson } from "../create-person/CreatePerson.type";
+import { translateActive, translateContactType } from "../../common/components/layout/TranslateData";
+import { brDateFormat, settingAge } from "../../common/components/form/Date.helper";
 
-const translateContactType = (type: string): string => {
-  const translations: { [key: string]: string } = {
-    comercial: "Comercial",
-    residencial: "Residencial",
-    phone: "Celular"
-  };
-  return translations[type] || type;
-};
+
 
 export default function ListenPage() {
   const [persons, setPersons] = useState<ICreatePerson[]>([]);
@@ -40,8 +35,8 @@ export default function ListenPage() {
             <div key={person.id} className="border p-4 rounded-md shadow-md">
               <p><strong>Nome:</strong> {person.name}</p>
               <p><strong>CPF:</strong> {person.cpf}</p>
-              <p><strong>Data de Nascimento:</strong> {person.dateOfBirth}</p>
-              <p><strong>Ativo:</strong> {person.active}</p>
+              <p><strong>{`Data de Nascimento (${settingAge(brDateFormat(person.dateOfBirth))} anos):`}</strong> {brDateFormat(person.dateOfBirth)}</p>
+              <p><strong>Ativo:</strong> {translateActive(person.active)}</p>
               {person.phones.map((phone, index) => (
                 <div key={index}>
                   <InputForm

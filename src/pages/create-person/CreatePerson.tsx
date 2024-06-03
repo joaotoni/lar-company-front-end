@@ -6,6 +6,7 @@ import Dashboard from "../../common/components/layout/DashBoard";
 import { ICreatePerson } from './CreatePerson.type';
 import { createPerson } from '../../services/Person.api';
 import { toast } from 'react-toastify';
+import { maskCPF } from '../../common/components/masks/CPFMask';
 
 const emptyPerson = (): ICreatePerson => ({
   id: '',
@@ -60,6 +61,7 @@ export default function CreatePerson() {
                 type="text"
                 placeholder="Digite o CPF"
                 name="cpf"
+                mask={maskCPF}
                 value={formData.cpf}
                 onChange={handleChange}
                 required={true}
