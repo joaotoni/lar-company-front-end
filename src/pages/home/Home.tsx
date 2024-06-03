@@ -12,14 +12,14 @@ export default function Home() {
           navigateTo="/cadastro-de-pessoa"
         />
         <CardBox
-          title="Ver lista de pessoas cadastradas"
-          buttonText="Visualizar lista"
-          navigateTo="/create-phone"
-        />
-        <CardBox
           title="Cadastrar um novo telefone"
           buttonText="Cadastre Aqui"
           navigateTo="/cadastro-de-telefone"
+        />
+        <CardBox
+          title="Ver lista de pessoas cadastradas"
+          buttonText="Visualizar lista"
+          navigateTo="/lista-de-pessoas"
         />
       </section>
     </Dashboard>

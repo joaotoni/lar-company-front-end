@@ -15,22 +15,22 @@ export default function Header() {
           arrowIcon={false}
           inline
         >
-          <Dropdown.Item className={`bg-neutral-300 hover:bg-red-500 text-black hover:text-gray dark:text-black mb-1 ${isActive('/clientes') ? 'bg-red text-white dark:text-white' : ''}`}
+          <Dropdown.Item className={`bg-neutral-300 hover:bg-green-400 text-black hover:text-gray mb-1 ${isActive('/cadastro-de-pessoa') ? 'bg-green-400 text-black' : ''}`}
             onClick={() => navigate('/cadastro-de-pessoa')}>
             Cadastrar Pessoa
           </Dropdown.Item>
-          <Dropdown.Item className={`bg-neutral-300 hover:bg-red-500 text-black hover:text-gray dark:text-black mb-1 ${isActive('/clientes') ? 'bg-red text-white dark:text-white' : ''}`}
-            onClick={() => navigate('/clientes')}>
+          <Dropdown.Item className={`bg-neutral-300 hover:bg-green-400 text-black hover:text-gray mb-1 ${isActive('/lista-de-pessoas') ? 'bg-green-400 text-black' : ''}`}
+            onClick={() => navigate('/lista-de-pessoas')}>
             Listar Pessoas Cadastradas
           </Dropdown.Item>
-          <Dropdown.Item className={`bg-neutral-300 hover:bg-red-500 text-black hover:text-gray dark:text-black mb-1 ${isActive('/clientes') ? 'bg-red text-white dark:text-white' : ''}`}
+          <Dropdown.Item className={`bg-neutral-300 hover:bg-green-400 text-black hover:text-gray mb-1 ${isActive('/cadastro-de-telefone') ? 'bg-green-400 text-black' : ''}`}
             onClick={() => navigate('/cadastro-de-telefone')}>
             Cadastrar telefone
           </Dropdown.Item>
         </Dropdown>
       </div>
       <div>
-        <h2 className='font-bold text-white text-[22px]'> REGISTRAT1ONT</h2>
+        <h2 onClick={() => navigate('/')} className='font-bold text-white text-[22px] cursor-pointer'> REGISTRAT1ONT</h2>
       </div>
       <div className='flex text-white items-center gap-4'>
         <img onClick={() => navigate('/')} src="/imgs/logo.png" className='w-[80px] cursor-pointer' />

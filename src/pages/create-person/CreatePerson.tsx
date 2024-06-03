@@ -12,7 +12,7 @@ const emptyPerson = (): ICreatePerson => ({
   _id: '',
   name: '',
   cpf: '',
-  birthDate: '',
+  dateOfBirth: '',
   active: '',
   phones: []
 });
@@ -67,8 +67,8 @@ export default function CreatePerson() {
               <InputForm
                 label="Data de nascimento:"
                 type="date"
-                name="birthDate"
-                value={formData.birthDate}
+                name="dateOfBirth"
+                value={formData.dateOfBirth}
                 onChange={handleChange}
                 required={true}
                 placeholder={''}
