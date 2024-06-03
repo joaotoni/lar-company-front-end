@@ -8,7 +8,7 @@ export interface ICreatePerson {
   _id: string;
   name: string;
   cpf: string;
-  birthDate: string;
+  dateOfBirth: string;
   active: string;
   phones: PhoneDetails[];
 }
@@ -19,7 +19,7 @@ export const emptyPlan = () =>
   _id: "",
   name: "",
   cpf: "",
-  birthDate: new Date().toISOString().split('T')[0],
+  dateOfBirth: new Date().toISOString().split('T')[0],
   active: "",
   phones: [],
 } as ICreatePerson);
